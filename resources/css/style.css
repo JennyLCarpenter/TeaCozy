@@ -1,0 +1,71 @@
+html {font-family: Helvetica;
+   font-size: 22px;
+   color: seashell;
+   background-color: black;
+   opacity: .9;
+   text-align: center;
+ }
+ .top {height: 69px;
+       border-bottom: 1px solid seashell;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 100%;
+       top: 0;
+       left: 0;
+       z-index: 20;
+       }
+.links {display: flex;
+        justify-content: flex-end;
+        text-decoration: underline;
+        }
+.logo {width: auto;
+    height: 50px;
+    margin: 10px 0 9px 10px;
+     }
+.featured,
+.locations {margin-left: 10px;
+        }
+
+.container {width: 1200px;
+           display: block;
+          }
+.mission {background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+          height: 700px;
+          width: 1200px;
+          background-repeat: no-repeat;
+          background-size: cover;
+            }
+.midtext {display: flex;
+          align-items: stretch;
+        }
+h2.missionheader {font-weight: bold;
+}
+h4.missionstatement {font-weight: normal;
+}
+.middle {display: block;
+         text: center;
+         margin: 20px;
+}
+.middleimages {display: flex;
+               height: 500px;
+               width: 1000px;
+            }
+.first,
+.second,
+.third,
+.fourth,
+.fifth {height: 200px;
+        width: 300px;
+        margin-top: 10px;
+        flex-shrink: 1;
+        margin: auto;
+
+      }
+.locationsquare {background-color: black;
+                 opacity: 1;
+               }
+.locationsquarehead {text: center;
+}
+.bottombody {background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+}
