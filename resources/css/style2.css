@@ -10,6 +10,7 @@
        display: flex;
        height: 69px;
        width: 100%;
+       background-color: inherit;
        justify-content: space-between;
        align-items: center;
        position: fixed;
@@ -30,7 +31,7 @@ nav li {list-style-type: none;
 }
 .container {position: relative;
             top: 70px;
-            margin: 15px;
+            margin: 0px 0px 15px 0px;
           }
 .mission {background-image: url('../images/img-mission-background.jpg');
           background-size: cover;
@@ -56,14 +57,17 @@ h4 {display: block;
   }
 
 .middle {display: flex;
-        flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-content: center;
                 width: 1000px;
+                height: auto;
                 padding: 60px 0px;
                 margin: auto;
               }
+.middleimages {display: inline-block;
+
+}
 .middle img {height: 200px;
              width: 300px;
              padding: 10px 15px;
@@ -71,7 +75,7 @@ h4 {display: block;
 .bottombody {display: flex;
                 flex-wrap: wrap;
                 background-image: url('../images/img-locations-background.jpg');
-                justify-content: space-around;
+                justify-content: center;
                 align-content: center;
                 flex-direction: row;
                 width: 1200px;
