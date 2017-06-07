@@ -32,9 +32,6 @@ nav li {list-style-type: none;
 .container {position: relative;
             top: 70px;
             margin: 0px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
           }
 .mission {background-image: url('../images/img-mission-background.jpg');
           background-size: cover;
@@ -57,27 +54,24 @@ h2 {display: block;
 }
 h4 {display: block;
     font-weight: bold;
-    position: relative;
-    align-content: center;
   }
 
 .middle {display: flex;
+         flex-direction: row;
                 width: 1000px;
                 flex-wrap: wrap;
                 align-content: center;
+                justify-content: center;
                 height: auto;
                 padding: 60px 0px;
                 margin: auto;
               }
-.middleimages {display: flex;
-               flex-wrap: wrap;
-               overflow: auto;
+.middle .middleimages {display: block;
+               margin: 0;
 }
 .middle img {height: 200px;
              width: 300px;
              padding: 10px 15px;
-             justify-content: center;
-             align-items: center;
            }
 .bottombody {display: flex;
                 flex-wrap: wrap;
@@ -90,17 +84,16 @@ h4 {display: block;
                 padding: 60px 0px;
                 margin: 10px;
               }
-.bodyheader h2 {background-color: transparent;
+.bottombody .bodyheader h2 {background-color: transparent;
 }
 
 .locationsquarehead {width: 300px;
                      height: 300px;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items; center;
                     margin: 15px 20px;
                     background-color: black;
                     opacity: 1;
-                    padding: 20px 0px;
                   }
 h3 {display: block;
    font-size: 1.17em;
