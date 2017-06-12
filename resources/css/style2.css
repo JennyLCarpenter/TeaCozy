@@ -33,7 +33,7 @@ a {color: white;
 }
 .container {position: relative;
             top: 70px;
-            margin: 0px auto;
+            margin: 0px 0px 15px 0px;
           }
 .bodyheader {width: 100%;
           }
