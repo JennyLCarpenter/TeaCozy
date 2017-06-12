@@ -19,6 +19,7 @@
 .logo img {margin-left: 10px;
            height: 50px;
 }
+
 nav {display: flex;
        align-items: center;
        margin: 0;
@@ -33,6 +34,8 @@ a {color: white;
 .container {position: relative;
             top: 70px;
             margin: 0px auto;
+          }
+.bodyheader {width: 100%;
           }
 .mission {background-image: url('../images/img-mission-background.jpg');
           background-size: cover;
@@ -55,7 +58,7 @@ h4 {display: block;
 .middle {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
   }
 .middleimages {
     width: 1000px;
@@ -63,11 +66,12 @@ h4 {display: block;
     flex-wrap: wrap;
     justify-content: center;
   }
+
 .middle img {
     height: 200px;
     width: 300px;
   }
-  .item {
+.item {
     /* In HTML, wrapped a div with class="item" for each image h4 set */
     display: 3px solid green;
     width: 300px;
@@ -76,7 +80,7 @@ h4 {display: block;
     justify-content: center; /* align img and h4 */
     margin: 15px 15px; /* space between each item */
   }
-  .item h4 {
+.item h4 {
     margin-top: 10px; /* space between image and it's text */
   }
 .bottombody {display: flex;
@@ -88,7 +92,7 @@ h4 {display: block;
                 width: 1200px;
                 height: 500px;
                 padding: 60px 0px;
-                margin: auto;
+                margin-top: 30px;
               }
 #other {background-color: transparent;
 }
@@ -108,11 +112,13 @@ h3 {display: block;
  .locationsquarehead p {display: inline;
  }
 
- .contact {display: block;
+ .contact {display: flex;
+           flex-direction: column;
           height: 200px;
+          width: 100%;
            margin: 5px 0px;
            padding: 60px 0px;
-           text-align: center;
+           justify-content: center;
          }
  h5 {display: block;
     font-size: .8em;
