@@ -70,6 +70,7 @@ h4 {display: block;
 .middle img {
     height: 200px;
     width: 300px;
+    margin: 30px;
   }
 .item {
     /* In HTML, wrapped a div with class="item" for each image h4 set */
