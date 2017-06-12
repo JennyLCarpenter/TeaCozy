@@ -1,8 +1,8 @@
 * {font-family: Helvetica;
    font-size: 22px;
    color: seashell;
-   background-color: black;
    opacity: .9;
+   background-color: black;
    text-align: center;
    margin: 0;
  }
@@ -10,7 +10,7 @@
        display: flex;
        height: 69px;
        width: 100%;
-       background-color: inherit;
+       background-color: black;
        justify-content: space-between;
        align-items: center;
        position: fixed;
@@ -19,7 +19,6 @@
 .logo img {margin-left: 10px;
            height: 50px;
 }
-
 nav {display: flex;
        align-items: center;
        margin: 0;
@@ -27,6 +26,8 @@ nav {display: flex;
 nav li {list-style-type: none;
         padding: 0px 15px;
       }
+a {color: white;
+}
 .li {display: list-item;
 }
 .container {position: relative;
@@ -44,47 +45,52 @@ nav li {list-style-type: none;
           vertical-align: middle;
           justify-content: center;
 }
-.bodyheader {padding: 10px 0px;
-               background-color: black;
-               opacity: .9;
-               width: 100%;
-             }
+
 h2 {display: block;
   font-size: 1.5em;
 }
 h4 {display: block;
     font-weight: bold;
   }
-
-.middle {display: flex;
-         flex-direction: row;
-                width: 1000px;
-                flex-wrap: wrap;
-                align-content: center;
-                justify-content: center;
-                height: auto;
-                padding: 60px 0px;
-                margin: auto;
-              }
-.middle .middleimages {display: block;
-               margin: 0;
-}
-.middle img {height: 200px;
-             width: 300px;
-             padding: 10px 15px;
-           }
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;;
+  }
+.middleimages {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.middle img {
+    height: 200px;
+    width: 300px;
+  }
+  .item {
+    /* In HTML, wrapped a div with class="item" for each image h4 set */
+    display: 3px solid green;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap; /* this along with width forces h4 to wrap under img */
+    justify-content: center; /* align img and h4 */
+    margin: 15px 15px; /* space between each item */
+  }
+  .item h4 {
+    margin-top: 10px; /* space between image and it's text */
+  }
 .bottombody {display: flex;
                 flex-wrap: wrap;
                 background-image: url('../images/img-locations-background.jpg');
-                justify-content: space-between;
+                justify-content: center;
                 align-content: center;
                 flex-direction: row;
                 width: 1200px;
                 height: 500px;
                 padding: 60px 0px;
-                margin: 10px;
+                margin: auto;
               }
-.bottombody .bodyheader h2 {background-color: transparent;
+#other {background-color: transparent;
 }
 
 .locationsquarehead {width: 300px;
@@ -101,14 +107,19 @@ h3 {display: block;
  }
  .locationsquarehead p {display: inline;
  }
+
+ .contact {display: block;
+          height: 200px;
+           margin: 5px 0px;
+           padding: 60px 0px;
+           text-align: center;
+         }
+ h5 {display: block;
+    font-size: .8em;
+  }
+
+
  footer {text-align: left;
          font-size: 12px;
          margin-left: 20px;
  }
- .contact {height: 200px;
-           margin: 5px 0px;
-           padding: 60px 0px;
-         }
-h5 {display: block;
-    font-size: .8em;
-  }
